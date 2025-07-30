@@ -1,0 +1,56 @@
+#include "uart.h"
+#include "nrf.h"
+#include "SEGGER_RTT.h"
+#include <string.h>
+
+uint32_t uart_init(void) {
+    // Configure TX as output, RX as input
+    NRF_GPIO->DIRSET = (1 << PIN_TXD);
+    NRF_GPIO->DIRCLR = (1 << PIN_RXD);
+ NRF_GPIO->PIN_CNF[PIN_RXD] = (GPIO_PIN_CNF_PULL_Pullup << GPIO_PIN_CNF_PULL_Pos); // Pull-up on RX
+    // Configure UART registers
+    NRF_UART0->PSELTXD   = PIN_TXD;
+    NRF_UART0->PSELRXD   = PIN_RXD;
+    NRF_UART0->BAUDRATE  = UART_BAUDRATE_BAUDRATE_Baud115200;
+    NRF_UART0->CONFIG    = (UART_CONFIG_HWFC_Disabled << UART_CONFIG_HWFC_Pos);
+
+ // Enable RX and TX
+    NRF_UART0->TASKS_STARTRX = 1;
+    NRF_UART0->TASKS_STARTTX = 1;
+    NRF_UART0->EVENTS_RXDRDY = 0;
+    NRF_UART0->EVENTS_TXDRDY = 0;
+
+    // Enable UART
+    NRF_UART0->ENABLE = (UART_ENABLE_ENABLE_Enabled << UART_ENABLE_ENABLE_Pos);
+
+    // Verify UART is running
+    if (NRF_UART0->ENABLE != (UART_ENABLE_ENABLE_Enabled << UART_ENABLE_ENABLE_Pos)) {
+        SEGGER_RTT_WriteString(0, "UART enable failed\n");
+        return NRF_ERROR_INTERNAL;
+    }
+
+    SEGGER_RTT_WriteString(0, "UART hardware initialized\n");
+    return NRF_SUCCESS;
+}
+
+
+void uart_send_byte(char byte) {
+    NRF_UART0->TASKS_STARTTX = 1;
+    NRF_UART0->TXD = byte;
+    while (!NRF_UART0->EVENTS_TXDRDY);
+    NRF_UART0->EVENTS_TXDRDY = 0;
+    NRF_UART0->TASKS_STOPTX = 1;
+}
+
+void uart_send_string(const char *str) {
+    while (*str) {
+        uart_send_byte(*str++);
+    }
+}
+
+char uart_receive_char(void) {
+    while (!NRF_UART0->EVENTS_RXDRDY);
+    NRF_UART0->EVENTS_RXDRDY = 0;
+    return NRF_UART0->RXD;
+}
+

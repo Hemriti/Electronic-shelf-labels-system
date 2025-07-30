@@ -1,0 +1,141 @@
+T21C0 000:216.036   SEGGER J-Link V8.20 Log File
+T21C0 000:216.279   DLL Compiled: Mar 12 2025 12:14:11
+T21C0 000:216.292   Logging started @ 2025-05-16 10:47
+T21C0 000:216.321   Process: C:\Keil_v5\UV4\UV4.EXE
+T21C0 000:216.340 - 216.333ms 
+T21C0 000:216.363 JLINK_SetWarnOutHandler(...)
+T21C0 000:216.375 - 0.014ms 
+T21C0 000:216.389 JLINK_OpenEx(...)
+T21C0 000:224.993   Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+T21C0 000:231.035   Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+T21C0 000:238.847   Hardware: V7.00
+T21C0 000:238.888   S/N: 20090929
+T21C0 000:238.904   OEM: SEGGER
+T21C0 000:238.921   Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull
+T21C0 000:241.006   Bootloader: (FW returned invalid version)
+T21C0 000:245.000   TELNET listener socket opened on port 19021
+T21C0 000:245.146   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T21C0 000:245.254   WEBSRV Failed to put socket into listener state (port 19080)
+T21C0 000:245.316   WEBSRV Webserver running on local port 19081
+T21C0 000:245.440   Looking for J-Link GUI Server exe at: C:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T21C0 000:245.491   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V820\JLinkGUIServer.exe
+T21C0 000:245.525   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V820\JLinkGUIServer.exe
+T21C0 000:247.512   J-Link GUI Server info: "J-Link GUI server V8.20 "
+T21C0 000:247.865 - 31.469ms returns "O.K."
+T21C0 000:247.889 JLINK_GetEmuCaps()
+T21C0 000:247.898 - 0.006ms returns 0x88EA5833
+T21C0 000:247.906 JLINK_TIF_GetAvailable(...)
+T21C0 000:248.839 - 0.932ms 
+T21C0 000:248.854 JLINK_SetErrorOutHandler(...)
+T21C0 000:248.860 - 0.005ms 
+T21C0 000:248.884 JLINK_ExecCommand("ProjectFile = "C:\Users\moham\OneDrive\Bureau\pfe\project\nRF5_SDK_12.3.0_d7731ad\examples\ble_central\ble_app_uart_c\pca10028\s130\arm4\JLinkSettings.ini"", ...). 
+T21C0 000:261.233   Ref file found at: C:\Keil_v5\ARM\Segger\JLinkDevices.ref
+T21C0 000:261.353   REF file references invalid XML file: C:\Program Files\SEGGER\JLink_V820\JLinkDevices.xml
+T21C0 000:262.157 - 13.273ms returns 0x00
+T21C0 000:262.211 JLINK_ExecCommand("Device = nRF51422_xxAC", ...). 
+T21C0 000:262.383   Device "NRF51422_XXAC" selected.
+T21C0 000:262.584 - 0.364ms returns 0x00
+T21C0 000:262.594 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T21C0 000:262.605   ERROR: Unknown command
+T21C0 000:262.612 - 0.010ms returns 0x01
+T21C0 000:262.618 JLINK_GetHardwareVersion()
+T21C0 000:262.624 - 0.004ms returns 70000
+T21C0 000:262.630 JLINK_GetDLLVersion()
+T21C0 000:262.635 - 0.004ms returns 82000
+T21C0 000:262.641 JLINK_GetOEMString(...)
+T21C0 000:262.647 JLINK_GetFirmwareString(...)
+T21C0 000:262.652 - 0.004ms 
+T21C0 000:262.660 JLINK_GetDLLVersion()
+T21C0 000:262.664 - 0.004ms returns 82000
+T21C0 000:262.670 JLINK_GetCompileDateTime()
+T21C0 000:262.674 - 0.004ms 
+T21C0 000:262.681 JLINK_GetFirmwareString(...)
+T21C0 000:262.685 - 0.004ms 
+T21C0 000:262.691 JLINK_GetHardwareVersion()
+T21C0 000:262.696 - 0.004ms returns 70000
+T21C0 000:262.702 JLINK_GetSN()
+T21C0 000:262.706 - 0.004ms returns 20090929
+T21C0 000:262.712 JLINK_GetOEMString(...)
+T21C0 000:262.721 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T21C0 000:268.780 - 6.058ms returns 0x00
+T21C0 000:268.805 JLINK_HasError()
+T21C0 000:268.816 JLINK_SetSpeed(5000)
+T21C0 000:271.786 - 2.970ms 
+T21C0 000:272.098 JLINK_HasError()
+T21C0 000:272.111 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T21C0 000:272.118 - 0.006ms returns JLINKARM_RESET_TYPE_NORMAL
+T21C0 000:272.124 JLINK_Reset()
+T21C0 000:273.855   InitTarget() start
+T21C0 000:273.870    J-Link Script File: Executing InitTarget()
+T21C0 000:273.885   InitTarget() end - Took 14us
+T21C0 000:278.175   Found SW-DP with ID 0x0BB11477
+T21C0 000:309.889   Old FW that does not support reading DPIDR via DAP jobs
+T21C0 000:339.925   DPv0 detected
+T21C0 000:339.961   CoreSight SoC-400 or earlier
+T21C0 000:339.980   Scanning AP map to find all available APs
+T21C0 000:355.948   AP[1]: Stopped AP scan as end of AP map has been reached
+T21C0 000:356.055   AP[0]: AHB-AP (IDR: 0x04770021, ADDR: 0x00000000)
+T21C0 000:356.071   Iterating through AP map to find AHB-AP to use
+T21C0 000:387.945   AP[0]: Core found
+T21C0 000:387.979   AP[0]: AHB-AP ROM base: 0xF0000000
+T21C0 000:403.936   CPUID register: 0x410CC200. Implementer code: 0x41 (ARM)
+T21C0 000:403.977   Found Cortex-M0 r0p0, Little endian.
+T21C0 000:407.847   -- Max. mem block: 0x00002C18
+T21C0 000:412.912   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T21C0 000:415.124   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T21C0 000:417.126   CPU_ReadMem(4 bytes @ 0xE0002000)
+T21C0 000:419.084   FPUnit: 4 code (BP) slots and 0 literal slots
+T21C0 000:419.099   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T21C0 000:421.100   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T21C0 000:423.099   CPU_ReadMem(4 bytes @ 0xE0001000)
+T21C0 000:425.106   CPU_WriteMem(4 bytes @ 0xE0001000)
+T21C0 000:427.102   CoreSight components:
+T21C0 000:427.121   ROMTbl[0] @ F0000000
+T21C0 000:427.132   CPU_ReadMem(64 bytes @ 0xF0000000)
+T21C0 000:429.647   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T21C0 000:431.359   [0][0]: E00FF000 CID B105100D PID 000BB471 ROM Table
+T21C0 000:431.376   ROMTbl[1] @ E00FF000
+T21C0 000:431.386   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T21C0 000:433.753   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T21C0 000:435.343   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T21C0 000:435.358   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T21C0 000:437.344   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T21C0 000:437.359   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T21C0 000:439.337   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T21C0 000:439.350   CPU_ReadMem(32 bytes @ 0xF0002FE0)
+T21C0 000:441.353   [0][1]: F0002000 CID B105900D PID 000BB9A3 ???
+T21C0 000:441.373   SetupTarget() start
+T21C0 000:441.382    J-Link Script File: Executing SetupTarget()
+T21C0 000:441.401   CPU_ReadMem(4 bytes @ 0x10001004)
+T21C0 000:443.097   SetupTarget() end - Took 1.71ms
+T21C0 000:443.148   JLINK_GetResetTypeDesc
+T21C0 000:443.155   - 0.007ms 
+T21C0 000:443.165   Reset type: NORMAL (https://wiki.segger.com/J-Link_Reset_Strategies)
+T21C0 000:443.174   CPU is running
+T21C0 000:443.184   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T21C0 000:445.092   CPU is running
+T21C0 000:445.107   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T21C0 000:447.091   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T21C0 000:450.895   Reset: Reset device via AIRCR.SYSRESETREQ.
+T21C0 000:450.914   CPU is running
+T21C0 000:450.926   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T21C0 000:511.916   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T21C0 000:514.115   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T21C0 000:522.163   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T21C0 000:528.197   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T21C0 000:535.166   CPU_WriteMem(4 bytes @ 0xE0002000)
+T21C0 000:536.100   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T21C0 000:538.071   CPU_ReadMem(4 bytes @ 0xE0001000)
+T21C0 000:540.087   CPU_WriteMem(4 bytes @ 0xE0001000)
+T21C0 000:542.099 - 269.973ms 
+T21C0 000:542.123 JLINK_GetId()
+T21C0 000:543.903 - 1.778ms returns 0x0BB11477
+T21C0 000:548.940 JLINK_GetFirmwareString(...)
+T21C0 000:548.956 - 0.015ms 
+T21C0 003:035.306 JLINK_Close()
+T21C0 003:035.935   CPU_ReadMem(4 bytes @ 0xE0001000)
+T21C0 003:038.150   CPU_WriteMem(4 bytes @ 0xE0001000)
+T21C0 003:040.164   CPU_WriteMem(4 bytes @ 0xE0001004)
+T21C0 003:086.790 - 51.482ms
+T21C0 003:086.838   
+T21C0 003:086.846   Closed

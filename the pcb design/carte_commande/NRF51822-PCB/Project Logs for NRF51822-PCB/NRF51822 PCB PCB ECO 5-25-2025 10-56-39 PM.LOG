@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=U-0
+Removed Pin From Net: NetName=3.3V Pin=U-16
+Removed Pin From Net: NetName=RX Pin=U-17
+Removed Pin From Net: NetName=TX Pin=U-18
+Removed Pin From Net: NetName=OUT 1 Pin=U-19
+Removed Pin From Net: NetName=SWDCLK Pin=U-37
+Removed Pin From Net: NetName=SWDIO Pin=U-38
+Added Component: Designator=U?(E73-2G4M04S1D)
+Added Pin To Net: NetName=GND Pin=U?-0
+Added Pin To Net: NetName=OUT 1 Pin=U?-4
+Added Pin To Net: NetName=TX Pin=U?-5
+Added Pin To Net: NetName=RX Pin=U?-6
+Added Pin To Net: NetName=3.3V Pin=U?-14
+Added Pin To Net: NetName=SWDCLK Pin=U?-37
+Added Pin To Net: NetName=SWDIO Pin=U?-38

@@ -1,0 +1,15 @@
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.c
+.\_build\nrf_soc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h
+.\_build\nrf_soc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\device\nrf.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\device\nrf51.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\toolchain\cmsis\include\core_cm0.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\toolchain\cmsis\include\core_cmInstr.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\toolchain\cmsis\include\cmsis_armcc.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\toolchain\cmsis\include\core_cmFunc.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\toolchain\system_nrf51.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\device\nrf51_bitfields.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\device\nrf51_deprecated.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\device\compiler_abstraction.h
+.\_build\nrf_soc.o: ..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h
