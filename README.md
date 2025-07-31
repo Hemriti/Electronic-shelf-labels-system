@@ -32,7 +32,7 @@ A **Qt-based GUI** acts as the human-machine interface (HMI), where users can in
 
 Master and Slave PCB Boards:
 
-<img src="3dmaster.png" alt="Master 3D PCB" width="450"/>
+<img src="3d_master.png" alt="Master 3D PCB" width="450"/>
 <img src="carte_finale_maitre.png" alt="Final Master Card" width="450"/>
 
 ### 🧑‍💻 GUI Interface Screenshots
